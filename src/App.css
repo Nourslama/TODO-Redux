@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+body{
+  background-color:  rgb(255, 192, 203);
+}
+.App{
+  background-color: #b33a94;
+  min-height:500px;
+  width: 700px;
+  margin: 40px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.to-do-form input{
+  background-color: rgb(230, 197, 225);
+  border: 0; 
+  color: black;
+  width: 500px;
+  height: 50px;
+  margin: 20px;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.list input{
+  background-color: rgb(230, 197, 225);
+  border: 0; 
+  color: black;
+  width: 500px;
+  height: 50px;
+  margin: 20px;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 10px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+button{
+  height: 50px;
+  width: 80px;
+  border-radius: 5px;
+  border: 0;
+  background-color:rgb(216, 206, 206); 
+  cursor: pointer;
+}
+.buton{
+  
+  font-size: 25px;
+  cursor: pointer;
+
+}
+.to-do-form button:focus{
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form{
+  display:flex;
+  justify-content: space-around;
+}
+.formbutton{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.formbutton button{
+  margin-bottom: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+.list li{
+  position: relative;
+  outline: none;
+  list-style-type: none;
+}
+.list input:focus{
+background-color: white;
+}
+.span{
+  position: absolute;
+  right: 120px ;
+  top:35px;
+}
+.faicons{
+  margin: 0 5px;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+}
+.edit{
+   color:rgb(65, 132, 241);
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+.text{
+  margin-left: 20px;
+  margin-top: 2px;
+  color:black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addModal{
+  width: 600px;
+  background-color: rgb(241, 202, 202);
+  margin:40px auto
 }
